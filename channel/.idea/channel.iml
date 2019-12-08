@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/pc" />
+    <content url="file://$MODULE_DIR$/../chineseMedicine" />
+    <content url="file://$MODULE_DIR$/../health" />
+    <content url="file://$MODULE_DIR$/../skin" />
+    <content url="file://$MODULE_DIR$/../tumor" />
+    <content url="file://$MODULE_DIR$/../yinshi" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

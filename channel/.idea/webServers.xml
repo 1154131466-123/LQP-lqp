@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ba3980a3-a4ed-4f29-9083-8eb789a6d373" name="localhost" url="http://localhost:63341/">
+        <fileTransfer port="0" mountedRoot="D:\lqp\FamilyDoctor\channels\cbyp2019\pc" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
