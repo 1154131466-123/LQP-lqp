@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="renderer" content="webkit">
+<title>二十四节气</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="https://img.familydoctor.com.cn/images/overall/logo.ico" type="image/x-icon" rel="icon"/>
+<link href="https://img.familydoctor.com.cn/images/overall/logo.ico" type="image/x-icon" rel="shortcut icon"/>
+<link href="https://img.familydoctor.com.cn/component/common/styles/common.wide.css" rel="stylesheet" type="text/css"/>
+<link href="https://img.familydoctor.com.cn/component/channels/yangsheng/pc/styles/style.css" rel="stylesheet" type="text/css"/>
+<script src="https://img.familydoctor.com.cn/scripts/common/jquery.min.js"></script>
+<script src="https://img.familydoctor.com.cn/scripts/common/mredirect.js"></script>
+<script src="https://img.familydoctor.com.cn/component/common/scripts/fd-base-pc.min.js"></script>
+<script src="https://img.familydoctor.com.cn/component/common/scripts/bxslider4.min.js"></script>
+<script src="https://img.familydoctor.com.cn/component/common/scripts/gg_main.min.js"></script>
+<script src="https://img.familydoctor.com.cn/scripts/common/common.js"></script>
+<script src="https://img.familydoctor.com.cn/component/channels/yangsheng/pc/scripts/app.js"></script>
+</head>
+<body class="page-seasons">
+    <img src="https://img.familydoctor.com.cn/component/channels/yangsheng/pc/styles/images/season_bg.jpg" class="bg">
+    <ul id="seasons">
+        <li><a href="season_1.html"><i>立春</i></a></li>
+        <li><a href="season_2.html"><i>雨水</i></a></li>
+        <li><a href="season_3.html"><i>惊蛰</i></a></li>
+        <li><a href="season_13.html"><i>立秋</i></a></li>
+        <li><a href="season_14.html"><i>处暑</i></a></li>
+        <li><a href="season_15.html"><i>白露</i></a></li>
+        <li><a href="season_19.html"><i>立冬</i></a></li>
+        <li><a href="season_20.html"><i>小雪</i></a></li>
+
+        <li><a href="season_4.html"><i>春分</i></a></li>
+        <li><a href="season_5.html"><i>清明</i></a></li>
+        <li><a href="season_6.html"><i>谷雨</i></a></li>
+        <li><a href="season_16.html"><i>秋分</i></a></li>
+        <li><a href="season_17.html"><i>寒露</i></a></li>
+        <li><a href="season_18.html"><i>霜降</i></a></li>
+        <li><a href="season_21.html"><i>大雪</i></a></li>
+        <li><a href="season_22.html"><i>冬至</i></a></li>
+
+        <li><a href="season_7.html"><i>立夏</i></a></li>
+        <li><a href="season_8.html"><i>小满</i></a></li>
+        <li><a href="season_9.html"><i>芒种</i></a></li>
+        <li><a href="season_10.html"><i>夏至</i></a></li>
+        <li><a href="season_11.html"><i>小暑</i></a></li>
+        <li><a href="season_12.html"><i>大暑</i></a></li>
+        <li><a href="season_23.html"><i>小寒</i></a></li>
+        <li><a href="season_24.html"><i>大寒</i></a></li>
+    </ul>
+
+    <script>
+        $(function () {
+            var height = Math.ceil($(window).height()/3);
+            var isIE7 = !window.addEventListener;
+
+            $('#seasons li').each(function () {
+                this.style.height = height + 'px';
+
+                if (isIE7) {
+                    $(this).find('i').css({marginTop: (height - 110)/2 + 'px'});
+                }
+            });
+        });
+    </script>
+</body>
+</html>

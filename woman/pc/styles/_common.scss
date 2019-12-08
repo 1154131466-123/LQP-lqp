@@ -1,0 +1,29 @@
+img {
+    transition: transform .5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.channel-nav {
+    margin-bottom: 20px;
+    background: #cc3366;
+}
+
+.channel-header {
+    .focus {
+        .btn,
+        .keyword {
+            border: 1px solid #d4584e !important;
+        }
+
+        .btn {
+            border-left: 0 !important;
+        }
+
+        .keyword {
+            border-right: 0 !important;
+        }
+    }
+}

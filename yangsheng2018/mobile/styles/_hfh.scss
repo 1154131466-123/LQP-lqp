@@ -1,0 +1,584 @@
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.sections li.sec-5 {
+    width: 800px;
+}
+
+.sections li.sec-6 {
+    width: 610px;
+}
+
+.sections li.sec-7 {
+    width: 410px;
+}
+
+.sections li.sec-8 {
+    width: 350px;
+}
+
+.season-hot-foods {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    width: 740px;
+    overflow: hidden;
+
+    .left-cont {
+        position: relative;
+        width: 435px;
+        height: 100%;
+        float: left;
+
+        .wrap-tl {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .slider-season-food {
+        height: 100%;
+        padding-left: 133px;
+
+        .slider-cont {
+            height: 100% !important;
+            overflow: hidden;
+        }
+
+        .slider-outer {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slider-inner {
+            position: absolute;
+            height: 100%;
+        }
+
+        .slider-item {
+            height: 100%;
+            float: left;
+            box-shadow: 0 0 25px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        .btn-action {
+            position: absolute;
+            left: 48px;
+            width: 70px;
+            height: 38px;
+            background: #000000 no-repeat center;
+            background-size: 15px auto;
+
+            &.btn-prev {
+                top: 140px;
+                background-image: url(./images/arrow-next-white.png);
+            }
+            
+            &.btn-next {
+                top: 80px;
+                background-image: url(./images/arrow-prev-white.png);
+            }
+        }
+
+        .cont-tl {
+            margin: 0;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            line-height: 2.5;
+            font-weight: bold;
+            background: linear-gradient(to right, #14cc76, #00b2b2 50%, #007cc0);
+            background: -webkit-linear-gradient(left, #14cc76, #00b2b2 50%, #007cc0);
+        }
+
+        .intro-cont {
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+
+        .intro-text {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f2f2f2;
+            color: #444444;
+            font-size: 14px;
+
+            span {
+                color: #3366cc;
+            }
+        }
+
+        .relative-links {
+            margin-top: 5px;
+
+            p {
+                margin: 0;
+
+                a {
+                    display: block;
+                    height: 32px;
+                    line-height: 32px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: 14px;
+                    color: #444444;
+                }
+            }
+        }
+
+        @media screen and (max-height: 320px) {
+
+            .relative-links {
+                p {
+    
+                    a {
+                        height: 26px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-cont {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 270px;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+
+        .food-links {
+            overflow: hidden;
+
+            a {
+                width: 120px;
+                margin: 0 15px 10px 0;
+                float: left;
+                border-radius: 18px;
+                font-size: 15px;
+                text-align: center;
+                color: #3366cc;
+                line-height: 36px;
+                background-color: #fff;
+            }
+        }
+
+        @media screen and (max-height: 320px) {
+            .food-links {
+                a {
+                    width: 100px;
+                    margin-right: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.wrap-tl {
+    padding: 3px 5px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 27px;
+    color: #3366cc;
+    font-weight: bold;
+    line-height: 1;
+    background-color: #fff;
+}
+
+.season-sports-wrap {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    z-index: 1;
+    width: 430px;
+    padding: 95px 25px 10px;
+    background-color: #fff;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: -89px;
+        top: -27px;
+        width: 235px;
+        height: 70px;
+        background: url(./images/leaf-1.png) no-repeat center;
+        background-size: 100% auto;
+    }
+
+    .inner-tl {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        padding-bottom: 12px;
+        text-align: center;
+        font-size: 23px;
+        line-height: 1;
+        color: #444444;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            margin-left: -25px;
+            background-color: #3366cc;
+        }
+    }
+
+    .tags-cont {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+
+        a {
+            padding: 0 10px;
+            margin: 0 5px;
+            border-radius: 15px;
+            display: inline-block;
+            font-size: 14px;
+            color: #3366cc;
+            line-height: 30px;
+            background-color: #e5eeff;
+        }
+    }
+
+    .article-cont {
+        position: relative;
+        height: 100%;
+
+        .item {
+            margin-top: 10px;
+        }
+
+        .tl {
+            color: #3366cc;
+            font-size: 16px;
+        }
+
+        .text {
+            font-size: 14px;
+            color: #444444;
+            
+            span {
+                color: #3366cc;
+            }
+        }
+
+        .cont-inner {
+            height: 100%;
+            overflow: auto;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(to top, rgba(255,255,255, .99), rgba(255,255,255, 0.01));
+        }
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .season-sports-wrap {
+        width: 380px;
+
+        &::after {
+            left: -29px;
+        }
+    }
+}
+
+.article-list-wrap {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 40px;
+
+    .wrap-tl {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .links-list {
+        width: 400px;
+        height: 100%;
+
+        .list-inner {
+            height: 100%;
+            overflow: auto;
+        }
+
+        a {
+            padding-left: 22px;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 15px;
+            color: #ffffff;
+            line-height: 2;
+            background: url(./images/icon-round.png) no-repeat 0 center;
+            background-size: 15px auto;
+        }
+    }
+}
+
+.copyright {
+    position: absolute;
+    top: 50px;
+    width: 250px;
+
+    .logo {
+        width: 150px;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 10px;
+        background: url(./images/logo-1.png) no-repeat center;
+        background-size: 100% auto;
+    }
+
+    p {
+        text-align: center;
+        font-size: 13px;
+        color: #69a7e7;
+        line-height: 20px;
+    }
+}
+
+.theme-2 {
+    .wrap-tl,
+    .season-hot-foods .slider-season-food .intro-text span,
+    .season-hot-foods .right-cont .food-links a,
+    .season-sports-wrap .article-cont .text span,
+    .season-sports-wrap .article-cont .tl,
+    .season-sports-wrap .tags-cont a {
+        color: #47991f;
+    }
+
+    .season-sports-wrap .inner-tl:after {
+        background-color: #47991f;
+    }
+
+    .season-hot-foods .slider-season-food .cont-tl {
+        background: linear-gradient(to right, #26bf63, #61ba34 50%, #90b825);
+        background: -webkit-linear-gradient(left, #26bf63, #61ba34 50%, #90b825);
+    }
+
+    .season-sports-wrap .tags-cont a {
+        background-color: #e2f5c4;
+    }
+
+    .season-sports-wrap:after {
+        background-image: url(./images/leaf-1.png);
+    }
+
+    .copyright {
+        .logo {
+            background-image: url(./images/logo-2.png);
+        }
+
+        p {
+            color: #acd998;
+        }
+    }
+}
+
+.theme-3 {
+    .wrap-tl,
+    .season-hot-foods .right-cont .food-links a{
+        color: #36998a;
+    }
+
+    .season-hot-foods .slider-season-food .intro-text span,
+    .season-sports-wrap .article-cont .text span,
+    .season-sports-wrap .article-cont .tl,
+    .season-sports-wrap .tags-cont a {
+        color: #14cc76;
+    }
+
+    .season-sports-wrap .inner-tl:after {
+        background-color: #14cc76;
+    }
+
+    .season-hot-foods .slider-season-food .cont-tl {
+        background: linear-gradient(to right, #14cc76, #00b2b2 50%, #007cc0);
+        background: -webkit-linear-gradient(left, #14cc76, #00b2b2 50%, #007cc0);
+    }
+
+    .season-sports-wrap .tags-cont a {
+        background-color: #e3fcea;
+    }
+
+    .season-sports-wrap:after {
+        background-image: url(./images/leaf-1.png);
+    }
+
+    .copyright {
+        .logo {
+            background-image: url(./images/logo-3.png);
+        }
+
+        p {
+            color: #228f8f;
+        }
+    }
+}
+
+.theme-4 {
+    .wrap-tl {
+        color: #a14118;
+    }
+
+    .season-hot-foods .slider-season-food .intro-text span,
+    .season-hot-foods .right-cont .food-links a,
+    .season-sports-wrap .article-cont .text span,
+    .season-sports-wrap .article-cont .tl,
+    .season-sports-wrap .tags-cont a {
+        color: #e05012;
+    }
+
+    .season-sports-wrap .inner-tl:after {
+        background-color: #e05012;
+    }
+
+    .season-hot-foods .slider-season-food .cont-tl {
+        background: linear-gradient(to right, #ff5858, #f09819);
+        background: -webkit-linear-gradient(left, #ff5858, #f09819);
+    }
+
+    .season-sports-wrap .tags-cont a {
+        background-color: #faded4;
+    }
+
+    .season-sports-wrap:after {
+        left: -115px;
+        top: -195px;
+        width: 198px;
+        height: 257px;
+        background-image: url(./images/leaf-2.png);
+        background-position: 0 bottom;
+    }
+
+    .copyright {
+        .logo {
+            background-image: url(./images/logo-4.png);
+        }
+
+        p {
+            color: #a14118;
+        }
+    }
+}
+
+.theme-5 {
+    .wrap-tl,
+    .season-hot-foods .right-cont .food-links a{
+        color: #0072a8;
+    }
+
+    .season-hot-foods .slider-season-food .intro-text span,
+    .season-sports-wrap .article-cont .text span,
+    .season-sports-wrap .article-cont .tl,
+    .season-sports-wrap .tags-cont a {
+        color: #0e98da;
+    }
+
+    .season-sports-wrap .inner-tl:after {
+        background-color: #0e98da;
+    }
+
+    .season-hot-foods .slider-season-food .cont-tl {
+        background: linear-gradient(to right, #2f93e9, #309fdb 50%, #194efd);
+        background: -webkit-linear-gradient(left, #2f93e9, #309fdb 50%, #194efd);
+    }
+
+    .season-sports-wrap .tags-cont a {
+        background-color: #e3f4fc;
+    }
+
+    .season-sports-wrap:after {
+        left: -65px;
+        top: -60px;
+        width: 125px;
+        height: 121px;
+        background-image: url(./images/snow-1.png);
+    }
+
+    .copyright {
+        .logo {
+            background-image: url(./images/logo-5.png);
+        }
+
+        p {
+            color: #006ea6;
+        }
+    }
+}
+
+.theme-6 {
+    .wrap-tl,
+    .season-hot-foods .right-cont .food-links a,
+    .season-sports-wrap .article-cont .text span,
+    .season-sports-wrap .tags-cont a {
+        color: #6f44c7;
+    }
+
+    .season-hot-foods .slider-season-food .intro-text span,
+    .season-sports-wrap .article-cont .tl {
+        color: #7562cc;
+    }
+
+    .season-sports-wrap .inner-tl:after {
+        background-color: #7562cc;
+    }
+
+    .season-hot-foods .slider-season-food .cont-tl {
+        background: linear-gradient(to right, #ed82b2, #cc7ac5 50%, #827ee5);
+        background: -webkit-linear-gradient(left, #ed82b2, #cc7ac5 50%, #827ee5);
+    }
+
+    .season-sports-wrap .tags-cont a {
+        background-color: #e7e3fc;
+    }
+
+    .season-sports-wrap:after {
+        left: -65px;
+        top: -60px;
+        width: 125px;
+        height: 121px;
+        background-image: url(./images/snow-2.png);
+    }
+
+    .copyright {
+        .logo {
+            background-image: url(./images/logo-6.png);
+        }
+
+        p {
+            color: #5f36b2;
+        }
+    }
+}
